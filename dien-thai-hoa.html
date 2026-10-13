@@ -1,0 +1,542 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#4b1718">
+    <title>Khám phá Huế - Điện Thái Hòa</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Serif:wght@400;500;600;700&display=swap"
+          rel="stylesheet">
+<link rel="stylesheet" href="ngo-mon.css">
+
+<body>
+
+    <!-- THANH ĐIỀU HƯỚNG -->
+<header class="site-header">
+        <a href="index.html" class="logo">✦ Khám phá Huế</a>
+
+        <nav>
+            <a href="intro.html">Trang chủ</a>
+            <a href="index.html">Bản đồ tương tác</a>
+            <a href="trochoi.html" class="act">Trò chơi</a>
+            <a href="#">Giới thiệu</a>
+        </nav>
+    </header>
+
+    <!-- ẢNH NỀN -->
+    <main class="hero">
+        <img
+            class="anhnen"
+            src="dienthaihoa.png"
+            alt="Cổng Ngọ Môn, Đại Nội Huế"
+        >
+
+        <div class="hero-caption">
+            <div class="hero-kicker"> DI SẢN CỐ ĐÔ HUẾ </div>
+
+            <h1>Điện<br>Thái Hòa</h1>
+
+            <p>
+            Biểu tượng quyền lực triều Nguyễn,nơi diễn ra các buổi lễ Đăng quang,
+            mừng Vạn thọ và các phiên Thiết triều trọng đại của đất nước.
+            </p>
+        </div>
+          <div>
+                <a class="khamphahue" href="dien-thai-hoa-2.html">
+                        Khám Phá Điện Thái Hòa 3D
+                </a>
+            </div>
+
+        <!-- NÚT MỞ THÔNG TIN -->
+        <div class="trigger-container">
+            <span class="trigger-label">
+                Khám phá di tích
+            </span>
+
+            <button
+                id="toggleSidebar"
+                class="button"
+                aria-label="Mở thông tin Cổng Ngọ Môn"
+                aria-controls="infoSidebar"
+                aria-expanded="false"
+            >
+                <div class="button-box">
+                    <span class="button-elem">
+                        <svg viewBox="0 0 46 40" aria-hidden="true">
+                            <path d="M46 20.038c0-.7-.3-1.5-.8-2.1l-16-17c-1.1-1-3.2-1.4-4.4-.3-1.2 1.1-1.2 3.3 0 4.4l11.3 11.9H3c-1.7 0-3 1.3-3 3s1.3 3 3 3h33.1l-11.3 11.9c-1 1-1.2 3.3 0 4.4 1.2 1.1 3.3.8 4.4-.3l16-17c.5-.5.8-1.1.8-1.9z"/>
+                        </svg>
+                    </span>
+
+                    <span class="button-elem">
+                        <svg viewBox="0 0 46 40" aria-hidden="true">
+                            <path d="M46 20.038c0-.7-.3-1.5-.8-2.1l-16-17c-1.1-1-3.2-1.4-4.4-.3-1.2 1.1-1.2 3.3 0 4.4l11.3 11.9H3c-1.7 0-3 1.3-3 3s1.3 3 3 3h33.1l-11.3 11.9c-1 1-1.2 3.3 0 4.4 1.2 1.1 3.3.8 4.4-.3l16-17c.5-.5.8-1.1.8-1.9z"/>
+                        </svg>
+                    </span>
+                </div>
+            </button>
+        </div>
+    </main>
+
+    <!-- LỚP PHỦ PHÍA SAU BẢNG -->
+    <div
+        id="sidebarBackdrop"
+        class="sidebar-backdrop"
+        aria-hidden="true"
+    ></div>
+
+    <!-- BẢNG THÔNG TIN -->
+    <aside
+        id="infoSidebar"
+        class="sidebar-gradient"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="sidebarTitle"
+        aria-hidden="true"
+        inert
+    >
+        <header class="sidebar-header">
+            <div class="sidebar-heading">
+                <span class="sidebar-symbol">✦</span>
+
+                <div>
+                    <h2 id="sidebarTitle">Di tích Điện Thái Hòa</h2>
+                    <div class="sidebar-subtitle">
+                        LỊCH SỬ · KIẾN TRÚC · VĂN HÓA
+                    </div>
+                </div>
+            </div>
+
+            <button
+                id="closeSidebar"
+                class="close-button"
+                aria-label="Đóng bảng thông tin"
+            >
+                <svg width="20" height="20" fill="none"
+                     stroke="currentColor" viewBox="0 0 24 24"
+                     aria-hidden="true">
+                    <path stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M6 18L18 6M6 6l12 12"/>
+                </svg>
+            </button>
+        </header>
+
+        <div class="sidebar-body">
+
+            <div class="section-kicker">HỒ SƠ DI SẢN SỐ</div>
+
+            <h2 class="intro-title">
+                Điện Thái Hòa – Hoàng Triều Đại Nội Huế
+            </h2>
+
+            <div class="featured-image">
+                <img
+                    src="dien-thai-hoa-2.jpg"
+                    alt="Kiến trúc Cổng Ngọ Môn và Lầu Ngũ Phụng"
+                    onerror="this.onerror=null; this.src='https://placehold.co/700x400/5c2024/f0dfb4?text=Cong+Ngo+Mon+Hue';"
+                >
+                <div class="image-caption">
+                    Nơi đặt ngai vàng truyền quốc & trung tâm quyền lực triều Nguyễn (1802 – 1945)
+                </div>
+            </div>
+
+            <p class="intro-text">
+                Điện Thái Hòa được xây dựng vào năm 1805 dưới thời vua Gia Long
+                và là công trình kiến trúc quan trọng bậc nhất trong Hoàng thành Huế.
+                Tên gọi "Thái Hòa" mang ý nghĩa về sự hòa hợp lớn lao,
+                 cầu mong thiên hạ thái bình, đất nước thịnh vượng.
+            </p>
+
+            <!-- THẺ KIẾN THỨC -->
+            <div class="fact-grid">
+                <div class="fact-card">
+                    <strong>Hoàng Thành</strong>
+                    <span>Khu vực của Điện Thái Hòa ở Cố dô Huế</span>
+                </div>
+
+                <div class="fact-card">
+                    <strong>Trùng thiềm điệp ốc</strong>
+                    <span>Kiểu kiến trúc đặc trưng của Điện Thái Hòa</span>
+                </div>
+
+                <div class="fact-card">
+                    <strong>Hoàng Lưu Ly</strong>
+                    <span>Màu sắc ngói chủ đạo trên mái Điện Thái Hòa biểu trưng cho sự uy quyền của hoàng gia</span>
+                </div>
+
+                <div class="fact-card">
+                    <strong>1805</strong>
+                    <span>thời gian Điện Thái Hòa được xây dựng</span>
+                </div>
+            </div>
+
+            <!-- MỤC 1 -->
+            <section class="content-section">
+                <h3>
+                    <span class="section-number">01</span>
+                    Lịch sử hình thành
+                </h3>
+
+                <p>
+                   Điện Thái Hòa được khởi công xây dựng vào năm 1805 cùng với quá trình quy hoạch và xây dựng Kinh thành Huế dưới thời vua Gia Long. Ban đầu, điện được đặt ở khu vực phía nam so với vị trí hiện tại.
+                </p>
+
+                <p>
+                    Đến năm 1833, trong công cuộc cải tổ và quy hoạch lại toàn bộ hệ thống cung điện trong Tử Cấm Thành, vua Minh Mạng đã cho tháo dỡ, di dời điện Thái Hòa lùi về phía bắc (vị trí hiện tại) và cho xây dựng lại với quy mô lớn hơn, đồ sộ và kiên cố hơn.
+                </p>
+
+                <p>
+                   Trải qua bao thăng trầm của lịch sử, chiến tranh và khí hậu khắc nghiệt ở miền Trung, Điện Thái Hòa đã nhiều lần được triều đình và các đời sau tiến hành trùng tu (vào các năm dưới thời các vua Thành Thái, Khải Định và sau này là Nhà nước bảo tồn di tích).
+                </p>
+            </section>
+
+            <!-- MỤC 2 -->
+            <section class="content-section">
+                <h3>
+                    <span class="section-number">02</span>
+                    Đặc điểm kiến trúc
+                </h3>
+
+                <p>
+                    Điện Thái Hòa được tổ chức theo lối kiến trúc "trùng thiềm điệp ốc" đặc trưng, kết hợp giữa bộ khung gỗ đồ sộ và phần mái lợp ngói lưu ly rực rỡ. Sự hòa quyện giữa quy mô hoành tráng, nghệ thuật chạm khắc tinh xảo và sắc màu hoàng gia tạo nên diện mạo uy nghiêm bậc nhất trong Đại Nội Huế.
+                </p>
+
+                <ul>
+                    <li>
+                        <strong>Kết cấu trùng thiềm:</strong> Điện được cấu thành từ hai ngôi nhà kép nối liền nhau trên cùng một nền cao, tạo nên không gian nội thất rộng lớn và thông thoáng.
+                    </li>
+
+                    <li>
+                        <strong>Bộ khung gỗ lim và Ngai vàng:</strong>Hệ thống 80 cột gỗ lim được sơn son thếp vàng chạm rồng mây, làm nền cho chiếc ngai vàng truyền quốc đặt ở vị trí trung tâm.
+                    </li>
+
+                    <li>
+                        <strong>Mái ngói Hoàng Lưu Ly:</strong> Hệ mái lợp ngói men vàng rực rỡ với trang trí rồng chầu trên đỉnh, thể hiện biểu tượng quyền lực tối cao của Thiên tử.
+                    </li>
+
+                    <li>
+                        <strong>Sân Đại Bái Yết và Không gian:</strong>Phần sân rộng nhiều tầng phía trước cùng hệ thống cột mốc Phẩm sơn góp phần thể hiện rõ tính tôn nghiêm và trật tự phân cấp trong triều đình.
+                    </li>
+                </ul>
+            </section>
+
+            <!-- MỤC 3 -->
+            <section class="content-section">
+                <h3>
+                    <span class="section-number">03</span>
+                    Giá trị lịch sử và văn hóa
+                </h3>
+
+                <p>
+                   Điện Thái Hòa là tư liệu trực quan quan trọng để nghiên cứu về lịch sử triều Nguyễn, nghệ thuật kiến trúc gỗ truyền thống và trật tự nghi lễ hoàng gia. Công trình giúp người học hình dung rõ nét cách một ngôi điện vừa đóng vai trò trung tâm thiết triều, vừa là nơi biểu đạt đỉnh cao của quyền lực phong kiến và biểu tượng thẩm mỹ cung đình.
+                </p>
+
+                <p>
+                   Điện Thái Hòa thuộc Quần thể di tích Cố đô Huế, được UNESCO ghi danh là Di sản Văn hóa Thế giới từ năm 1993. Giá trị của công trình không chỉ đại diện cho di sản kiến trúc Việt Nam mà còn đóng góp một phần quan trọng vào kho tàng di sản văn hóa nhân loại.
+                </p>
+
+                <div class="learning-note">
+                    <strong>Gợi ý học tập:</strong>
+                    Khi quan sát Điện Thái Hòa, hãy chú ý mối quan hệ giữa kết cấu trùng thiềm điệp ốc, vị trí ngai vàng, hệ thống 80 cột gỗ lim và sân Đại Bái Yết. Từ đó, thử giải thích vì sao kiến trúc này vừa có công năng sử dụng vừa mang ý nghĩa nghi lễ.
+                </div>
+            </section>
+
+            <!-- MỤC 4 -->
+            <section class="content-section">
+                <h3>
+                    <span class="section-number">04</span>
+                    Kết nối kiến thức liên môn
+                </h3>
+
+                <ul>
+                    <li>
+                        <strong>Lịch sử:</strong> tìm hiểu triều Nguyễn,
+                        vua Minh Mạng, các nghi lễ cung đình và sự kiện
+                        thoái vị năm 1945.
+                    </li>
+
+                    <li>
+                        <strong>Địa lý:</strong> xác định vị trí Ngọ Môn
+                        trên bản đồ Đại Nội; tìm hiểu mối quan hệ giữa
+                        kinh đô, sông Hương và cảnh quan Huế.
+                    </li>
+
+                    <li>
+                        <strong>Toán học:</strong> quan sát tính đối xứng,
+                        hình dạng các tầng mái, tỉ lệ giữa đài cổng và
+                        lầu phía trên; có thể phác họa sơ đồ hình học
+                        đơn giản từ ảnh công trình.
+                    </li>
+
+                    <li>
+                        <strong>Ngữ văn:</strong> viết đoạn văn thuyết
+                        minh về một chi tiết kiến trúc, hoặc trình bày
+                        cảm nhận về giá trị lịch sử của Ngọ Môn.
+                    </li>
+
+                    <li>
+                        <strong>Tin học:</strong> sử dụng bản đồ tương tác,
+                        hình ảnh 360 độ và tư liệu số để khám phá di tích;
+                        kiểm chứng thông tin và ghi nguồn hình ảnh.
+                    </li>
+                </ul>
+            </section>
+
+            <!-- MỤC 5 -->
+            <section class="content-section">
+                <h3>
+                    <span class="section-number">05</span>
+                    Bảo tồn di sản và trách nhiệm học sinh
+                </h3>
+
+                <p>
+                    Di tích lịch sử là nguồn tư liệu quý nhưng cũng có
+                    thể bị ảnh hưởng bởi thời tiết, môi trường và hoạt
+                    động của con người. Bảo tồn di sản cần sự phối hợp
+                    giữa cơ quan chuyên môn, cộng đồng và khách tham quan.
+                </p>
+
+                <p>
+                    Học sinh có thể góp phần bằng cách tuân thủ quy định
+                    khi tham quan, không chạm hoặc làm hư hại hiện vật,
+                    không xả rác, tôn trọng không gian di tích và giới
+                    thiệu thông tin có kiểm chứng đến mọi người.
+                </p>
+            </section>
+
+            <!-- TRẮC NGHIỆM -->
+            <section class="quiz-box" id="quizBox">
+                <div class="quiz-label">KIỂM TRA KIẾN THỨC</div>
+                <h3>Góc ôn tập</h3>
+
+                <p class="quiz-question" id="quizQuestion">
+                    Câu 1. Ngọ Môn được xây dựng dưới triều vua nào?
+                </p>
+
+                <div id="quizOptions">
+                    <button class="quiz-option" data-correct="false">
+                        A. Vua Gia Long
+                    </button>
+
+                    <button class="quiz-option" data-correct="true">
+                        B. Vua Minh Mạng
+                    </button>
+
+                    <button class="quiz-option" data-correct="false">
+                        C. Vua Tự Đức
+                    </button>
+
+                    <button class="quiz-option" data-correct="false">
+                        D. Vua Khải Định
+                    </button>
+                </div>
+
+                <p
+                    class="quiz-feedback"
+                    id="quizFeedback"
+                    aria-live="polite"
+                ></p>
+
+                <button
+                    id="nextQuestion"
+                    class="quiz-next"
+                    hidden
+                >
+                    Câu tiếp theo →
+                </button>
+            </section>
+
+            <div class="learning-note">
+                <strong>Thông điệp:</strong>
+                Hiểu di sản để thêm trân trọng lịch sử, có ý thức
+                bảo tồn và chủ động ứng dụng công nghệ trong học tập.
+            </div>
+
+        </div>
+
+        <footer class="sidebar-footer">
+            KHÁM PHÁ DI SẢN CỐ ĐÔ HUẾ ✦ HỌC TẬP · TRẢI NGHIỆM · BẢO TỒN
+        </footer>
+    </aside>
+
+    <script>
+        // ===== ĐIỀU KHIỂN BẢNG THÔNG TIN =====
+
+        const toggleBtn = document.getElementById("toggleSidebar");
+        const closeBtn = document.getElementById("closeSidebar");
+        const sidebar = document.getElementById("infoSidebar");
+        const backdrop = document.getElementById("sidebarBackdrop");
+
+        function openSidebar() {
+            sidebar.inert = false;
+            sidebar.setAttribute("aria-hidden", "false");
+            backdrop.classList.add("open");
+            sidebar.classList.add("open");
+            toggleBtn.setAttribute("aria-expanded", "true");
+            document.body.style.overflow = "hidden";
+
+            closeBtn.focus();
+        }
+
+        function closeSidebar() {
+            sidebar.classList.remove("open");
+            backdrop.classList.remove("open");
+            sidebar.setAttribute("aria-hidden", "true");
+            toggleBtn.setAttribute("aria-expanded", "false");
+            document.body.style.overflow = "";
+
+            window.setTimeout(() => {
+                if (!sidebar.classList.contains("open")) {
+                    sidebar.inert = true;
+                }
+            }, 500);
+
+            toggleBtn.focus();
+        }
+
+        toggleBtn.addEventListener("click", openSidebar);
+        closeBtn.addEventListener("click", closeSidebar);
+        backdrop.addEventListener("click", closeSidebar);
+
+        document.addEventListener("keydown", (event) => {
+            if (event.key === "Escape" &&
+                sidebar.classList.contains("open")) {
+                closeSidebar();
+            }
+        });
+
+        // ===== CÂU HỎI TRẮC NGHIỆM =====
+
+        const questions = [
+            {
+                question: "Câu 1. Điện Thái Hòa nằm trong khu vực nào của Cố đô Huế?",
+                answers: [
+                    "A. Hoàng Thành (Đại Nội)",
+                    "B. Ngoại Thành",
+                    "C. Lăng Tự Đức",
+                    "D. Phủ Nội Vụ",
+                   
+                ],
+                correct: 0,
+                explanation:
+                    "Chính xác! Điện Thái Hòa nằm trong khu vực Hoàng Thành của Cố đô Huế."
+            },
+            {
+                question: "Câu 2. Kiểu kiến trúc đặc trưng của Điện Thái Hòa là gì?",
+                answers: [
+                    "A. Kiến trúc Gothic",
+                    "B. Kiến trúc đền tháp Champa",
+                  "C. Kiến trúc nhà rường một gian hai chái",
+                 "D. Trùng thiềm điệp ốc (Nhà kép nối liền)"
+                ],
+                correct: 3,
+                explanation:
+                    "Đúng rồi! Kiến trúc đặc trưng của Điện Thái Hòa là kiểu kiến trúc trùng thiềm điệp ốc."
+            },
+            {
+                question: "Câu 3. Màu sắc ngói chủ đạo trên mái Điện Thái Hòa biểu trưng cho điều gì?",
+                answers: [
+                    "A. Ngói xanh ngọc biểu trưng cho hòa bình", 
+                    "B. Ngói đỏ biểu trưng cho may mắn",
+                    "C. Ngói vàng (Hoàng Lưu Ly) biểu trưng cho quyền uy hoàng gia ",
+                    "D. Ngói lưu ly xám biểu trưng cho sự giản dị"
+                ],
+                correct: 1,
+                explanation:
+                    "Chính xác! Màu sắc ngói chủ đạo trên mái Điện Thái Hòa là ngói vàng để biểu thị cho quyền uy hoàng gia."
+            },
+            {
+                question: "Câu 4. Dưới triều Nguyễn, Điện Thái Hòa được xây dựng dưới triều đại của vị vua nào?",
+                answers: [
+                    "A. Vua Gia Long",
+                    "B. Vua Minh Mạng",
+                    "C. Vua Khải Định",
+                    "D. Vua Tự Đức"
+                ],
+                correct: 0,
+                explanation:
+                    "Đúng! Điện Thái Hòa được xây dựng dưới triều đại của vị vua Gia Long."
+            }
+        ];
+
+        const quizQuestion = document.getElementById("quizQuestion");
+        const quizOptions = document.getElementById("quizOptions");
+        const quizFeedback = document.getElementById("quizFeedback");
+        const nextQuestionBtn = document.getElementById("nextQuestion");
+
+        let currentQuestion = 0;
+        let answered = false;
+
+        function renderQuestion() {
+            const item = questions[currentQuestion];
+            answered = false;
+
+            quizQuestion.textContent = item.question;
+            quizFeedback.textContent = "";
+            nextQuestionBtn.hidden = true;
+            nextQuestionBtn.textContent =
+                currentQuestion === questions.length - 1
+                    ? "Làm lại từ đầu ↻"
+                    : "Câu tiếp theo →";
+
+            quizOptions.innerHTML = "";
+
+            item.answers.forEach((answer, index) => {
+                const button = document.createElement("button");
+                button.className = "quiz-option";
+                button.textContent = answer;
+                button.dataset.index = index;
+
+                button.addEventListener("click", () => {
+                    if (answered) return;
+                    answered = true;
+
+                    const isCorrect = index === item.correct;
+
+                    Array.from(quizOptions.children).forEach((option) => {
+                        option.disabled = true;
+
+                        if (Number(option.dataset.index) === item.correct) {
+                            option.classList.add("correct");
+                        }
+                    });
+
+                    if (!isCorrect) {
+                        button.classList.add("incorrect");
+                        quizFeedback.textContent =
+                            "Chưa chính xác. " + item.explanation;
+                        quizFeedback.style.color = "#852d25";
+                    } else {
+                        quizFeedback.textContent = item.explanation;
+                        quizFeedback.style.color = "#28542f";
+                    }
+
+                    nextQuestionBtn.hidden = false;
+                });
+
+                quizOptions.appendChild(button);
+            });
+        }
+
+        nextQuestionBtn.addEventListener("click", () => {
+            if (currentQuestion === questions.length - 1) {
+                currentQuestion = 0;
+            } else {
+                currentQuestion++;
+            }
+
+            renderQuestion();
+        });
+
+        renderQuestion();
+    </script>
+
+</body>
+</html>

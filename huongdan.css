@@ -1,0 +1,129 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background:
+        linear-gradient(rgba(20, 30, 29, 0.65),
+                        rgba(20, 30, 29, 0.75)),
+        url("dai-noi.png") center/cover no-repeat;
+    color: #f8f1df;
+}
+
+.guide {
+    position: relative;
+    width: 90%;
+    max-width: 560px;
+    padding: 45px 40px;
+    background: rgba(30, 38, 34, 0.92);
+    border: 1px solid #c6a96b;
+    border-radius: 18px;
+    box-shadow: 0 15px 50px #0008;
+    text-align: center;
+}
+
+.skip {
+    position: absolute;
+    top: 18px;
+    right: 20px;
+    border: none;
+    background: none;
+    color: #d8c9a4;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.step-number {
+    color: #d7b96e;
+    font-size: 13px;
+    letter-spacing: 3px;
+}
+
+.icon {
+    font-size: 65px;
+    margin: 25px 0;
+}
+
+h1 {
+    font-family: Georgia, serif;
+    font-size: 30px;
+    margin-bottom: 18px;
+    color: #f2d99b;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #e4e0d5;
+    min-height: 85px;
+}
+
+.progress {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin: 25px 0;
+}
+
+.progress-bar {
+    width: 30px;
+    height: 4px;
+    border-radius: 5px;
+    background: #68685b;
+    transition: 0.3s;
+}
+
+.progress-bar.active {
+    width: 48px;
+    background: #d7b96e;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.buttons button {
+    padding: 12px 22px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.25s;
+}
+
+.back {
+    border: 1px solid #c6a96b;
+    color: #f8f1df;
+    background: transparent;
+}
+
+.next {
+    border: 1px solid #d7b96e;
+    background: #c6a96b;
+    color: #25271f;
+    font-weight: bold;
+}
+
+.buttons button:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.15);
+}
+
+@media (max-width: 480px) {
+    .guide {
+        padding: 45px 22px 28px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+}

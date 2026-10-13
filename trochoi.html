@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trò chơi lật thẻ | Khám phá Huế</title>
+
+    <link rel="stylesheet" href="trochoi.css">
+    <script src="trochoi.js" defer></script>
+</head>
+
+<body>
+    <!-- Header -->
+   <header class="site-header">
+        <a href="index.html" class="logo">✦ Khám phá Huế</a>
+
+        <nav>
+            <a href="intro.html">Trang chủ</a>
+            <a href="bando/index.html">Bản đồ tương tác</a>
+            <a href="trochoi.html" class="act">Trò chơi</a>
+            <a href="#">Giới thiệu</a>
+        </nav>
+    </header>
+
+    <!-- Main Container -->
+    <main class="game-container">
+        
+        <!-- Tiêu đề Cuộn thư -->
+        <div class="scroll-header">
+            <h1>Trò chơi lật thẻ</h1>
+        </div>
+
+        <div class="description-banner">
+            <span class="cloud-ornament">༺</span>
+            <span>Hãy tìm và ghép đúng các cặp thẻ: một thẻ tên và một thẻ hình ảnh của cùng một di tích Huế!</span>
+            <span class="cloud-ornament">༻</span>
+        </div>
+
+        <!-- Bố cục 2 cột -->
+        <div class="main-content">
+            
+            <!-- Cột Trái: Bàn cờ chứa thẻ -->
+            <div class="board-wrapper">
+                <div class="game-board" id="gameBoard"></div>
+            </div>
+
+            <!-- Cột Phải: Bảng thông tin & Nút chơi lại -->
+            <aside class="sidebar-panel">
+                <div class="info-item">
+                    <span class="info-icon">⏳</span>
+                    <div class="info-text">
+                        <label>Thời gian</label>
+                        <strong id="timer">00:00</strong>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <span class="info-icon">★</span>
+                    <div class="info-text">
+                        <label>Số cặp đã tìm</label>
+                        <strong id="score">0 / 4</strong>
+                    </div>
+                </div>
+
+                <div class="divider"></div>
+
+                <button id="restartButton" type="button">
+                    <span>🔄</span> Chơi lại
+                </button>
+
+                <p id="gameMessage" aria-live="polite">
+                    Hãy bắt đầu hành trình khám phá!
+                </p>
+            </aside>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>Khám phá di sản văn hóa Cố đô Huế</p>
+    </footer>
+</body>
+</html>

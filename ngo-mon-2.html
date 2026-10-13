@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mô Hình 3D - Ngọ Môn Huế</title>
+    <!-- Nhúng Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #120404; /* Nền tối phong cách hoàng cung */
+            color: #f8e2b3;
+            font-family: 'Noto Serif', serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        /* Thanh tiêu đề phong cách hoài cổ */
+        .header-container {
+            text-align: center;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #d5b36c;
+            padding-bottom: 15px;
+            width: 100%;
+            max-width: 1000px;
+        }
+
+        h1 {
+            font-size: 26px;
+            color: #f0cf86;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+        }
+
+        .subtitle {
+            font-size: 14px;
+            color: #c5a880;
+        }
+
+        /* Khung chứa mô hình 3D Sketchfab */
+        .sketchfab-embed-wrapper {
+            width: 100%;
+            max-width: 1400px; /* Tăng từ 1000px lên 1300px để rộng hơn */
+            height: 600px;     /* Tăng từ 550px lên 700px để cao hơn */
+            background: #200707;
+            border: 2px solid #d5b36c;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+            position: relative;
+        }
+
+        .sketchfab-embed-wrapper iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        /* Phần thông tin tác giả bên dưới mô hình */
+        .model-info {
+            font-size: 13px;
+            margin-top: 10px;
+            color: #b5a082;
+            text-align: center;
+        }
+
+        .model-info a {
+            color: #f0cf86;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .model-info a:hover {
+            text-decoration: underline;
+        }
+
+        /* Nút quay lại trang chủ */
+        .back-btn {
+            margin-top: 25px;
+            display: inline-block;
+            padding: 10px 24px;
+            font-family: 'Noto Serif', serif;
+            font-size: 14px;
+            font-weight: 600;
+            color: #f8e2b3;
+            background: linear-gradient(145deg, #581819, #330c0d);
+            border: 1px solid #d5b36c;
+            border-radius: 10px;
+            text-decoration: none;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+            transition: all 0.3s ease;
+        }
+
+        .back-btn:hover {
+            background: linear-gradient(145deg, #ab2f31, #6b191c);
+            border-color: #f0cf86;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Tiêu đề trang 3D -->
+    <div class="header-container">
+        <h1>Mô Hình 3D: Ngọ Môn - Đại Nội Huế</h1>
+        <p class="subtitle">Không gian kiến trúc triều Nguyễn</p>
+    </div>
+
+    <!-- Khung chứa Model Sketchfab 3D -->
+    <div class="sketchfab-embed-wrapper"> 
+        <iframe title="Ngọ Môn - Meridian Gate Imperial City of Hue" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/6acf4f949d5247f3afa6afdaa7c188bd/embed"> 
+        </iframe> 
+    </div>
+
+    <!-- Nguồn tác giả Sketchfab -->
+    <div class="model-info"> 
+        <p>
+            <a href="https://sketchfab.com/3d-models/ngo-mon-meridian-gate-imperial-city-of-hue-6acf4f949d5247f3afa6afdaa7c188bd" target="_blank" rel="nofollow"> Ngọ Môn - Meridian Gate Imperial City of Hue </a> 
+            bởi <a href="https://sketchfab.com/korotovool" target="_blank" rel="nofollow">korotovool</a> trên 
+            <a href="https://sketchfab.com" target="_blank" rel="nofollow">Sketchfab</a>
+        </p>
+    </div>
+
+    <!-- Nút quay về -->
+    <a href="ngo-mon.html" class="back-btn">← Quay lại trang chính</a>
+
+</body>
+</html>

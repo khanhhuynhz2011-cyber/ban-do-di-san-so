@@ -1,0 +1,577 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#4b1718">
+    <title>Khám phá Huế - Cổng Ngọ Môn</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Serif:wght@400;500;600;700&display=swap"
+          rel="stylesheet">
+<link rel="stylesheet" href="ngo-mon.css">
+
+<body>
+
+    <!-- THANH ĐIỀU HƯỚNG -->
+   <header class="site-header">
+        <a href="index.html" class="logo">✦ Khám phá Huế</a>
+
+        <nav>
+            <a href="intro.html">Trang chủ</a>
+            <a href="bando/index.html">Bản đồ tương tác</a>
+            <a href="TTNNĐ/trochoi.html" class="act">Trò chơi</a>
+            <a href="#">Giới thiệu</a>
+        </nav>
+    </header>
+
+    <!-- ẢNH NỀN -->
+    <main class="hero">
+        <img
+            class="anhnen"
+            src="ngo-mon-hue-1.jpg"
+            alt="Cổng Ngọ Môn, Đại Nội Huế"
+        >
+ 
+        <div class="hero-caption">
+            <div class="hero-kicker"> DI SẢN CỐ ĐÔ HUẾ </div>
+
+            <h1>Cổng<br>Ngọ Môn</h1>
+
+            <p>
+                Dấu ấn kiến trúc cung đình triều Nguyễn.
+                Cùng khám phá câu chuyện lịch sử, nghệ thuật kiến trúc
+                và những giá trị văn hóa được lưu giữ qua thời gian.
+            </p>
+        </div>
+          <div>
+                <a class="khamphahue" href="ngo-mon-2.html">
+                        Khám Phá Ngọ Môn 3D
+                </a>
+            </div>
+
+        <!-- NÚT MỞ THÔNG TIN -->
+        <div class="trigger-container">
+            <span class="trigger-label">
+                Khám phá di tích
+            </span>
+
+            <button
+                id="toggleSidebar"
+                class="button"
+                aria-label="Mở thông tin Cổng Ngọ Môn"
+                aria-controls="infoSidebar"
+                aria-expanded="false"
+            >
+                <div class="button-box">
+                    <span class="button-elem">
+                        <svg viewBox="0 0 46 40" aria-hidden="true">
+                            <path d="M46 20.038c0-.7-.3-1.5-.8-2.1l-16-17c-1.1-1-3.2-1.4-4.4-.3-1.2 1.1-1.2 3.3 0 4.4l11.3 11.9H3c-1.7 0-3 1.3-3 3s1.3 3 3 3h33.1l-11.3 11.9c-1 1-1.2 3.3 0 4.4 1.2 1.1 3.3.8 4.4-.3l16-17c.5-.5.8-1.1.8-1.9z"/>
+                        </svg>
+                    </span>
+
+                    <span class="button-elem">
+                        <svg viewBox="0 0 46 40" aria-hidden="true">
+                            <path d="M46 20.038c0-.7-.3-1.5-.8-2.1l-16-17c-1.1-1-3.2-1.4-4.4-.3-1.2 1.1-1.2 3.3 0 4.4l11.3 11.9H3c-1.7 0-3 1.3-3 3s1.3 3 3 3h33.1l-11.3 11.9c-1 1-1.2 3.3 0 4.4 1.2 1.1 3.3.8 4.4-.3l16-17c.5-.5.8-1.1.8-1.9z"/>
+                        </svg>
+                    </span>
+                </div>
+            </button>
+        </div>
+    </main>
+
+    <!-- LỚP PHỦ PHÍA SAU BẢNG -->
+    <div
+        id="sidebarBackdrop"
+        class="sidebar-backdrop"
+        aria-hidden="true"
+    ></div>
+
+    <!-- BẢNG THÔNG TIN -->
+    <aside
+        id="infoSidebar"
+        class="sidebar-gradient"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="sidebarTitle"
+        aria-hidden="true"
+        inert
+    >
+        <header class="sidebar-header">
+            <div class="sidebar-heading">
+                <span class="sidebar-symbol">✦</span>
+
+                <div>
+                    <h2 id="sidebarTitle">Di tích Cổng Ngọ Môn</h2>
+                    <div class="sidebar-subtitle">
+                        LỊCH SỬ · KIẾN TRÚC · VĂN HÓA
+                    </div>
+                </div>
+            </div>
+
+            <button
+                id="closeSidebar"
+                class="close-button"
+                aria-label="Đóng bảng thông tin"
+            >
+                <svg width="20" height="20" fill="none"
+                     stroke="currentColor" viewBox="0 0 24 24"
+                     aria-hidden="true">
+                    <path stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M6 18L18 6M6 6l12 12"/>
+                </svg>
+            </button>
+        </header>
+
+        <div class="sidebar-body">
+
+            <div class="section-kicker">HỒ SƠ DI SẢN SỐ</div>
+
+            <h2 class="intro-title">
+                Cổng Ngọ Môn – Biểu tượng của Hoàng thành Huế
+            </h2>
+
+            <div class="featured-image">
+                <img
+                    src="cong-ngo-mon-2.jpg"
+                    alt="Kiến trúc Cổng Ngọ Môn và Lầu Ngũ Phụng"
+                    onerror="this.onerror=null; this.src='https://placehold.co/700x400/5c2024/f0dfb4?text=Cong+Ngo+Mon+Hue';"
+                >
+                <div class="image-caption">
+                    Ngọ Môn – cổng chính phía nam của Hoàng thành Huế
+                </div>
+            </div>
+
+            <p class="intro-text">
+                Ngọ Môn là một trong những công trình kiến trúc tiêu biểu
+                của Đại Nội Huế. Không chỉ đảm nhiệm chức năng kiểm soát
+                việc ra vào Hoàng thành, công trình còn gắn liền với
+                những nghi lễ quan trọng của triều Nguyễn và phản ánh
+                trình độ quy hoạch, xây dựng của người Việt trong lịch sử.
+            </p>
+
+            <!-- THẺ KIẾN THỨC -->
+            <div class="fact-grid">
+                <div class="fact-card">
+                    <strong>1833</strong>
+                    <span>Năm xây dựng Ngọ Môn dưới triều vua Minh Mạng</span>
+                </div>
+
+                <div class="fact-card">
+                    <strong>5 lối</strong>
+                    <span>Hệ thống lối đi qua phần đài cổng</span>
+                </div>
+
+                <div class="fact-card">
+                    <strong>Lầu Ngũ Phụng</strong>
+                    <span>Công trình kiến trúc nổi bật ở phía trên cổng</span>
+                </div>
+
+                <div class="fact-card">
+                    <strong>1993</strong>
+                    <span>Quần thể di tích Cố đô Huế được UNESCO ghi danh</span>
+                </div>
+            </div>
+
+            <!-- MỤC 1 -->
+            <section class="content-section">
+                <h3>
+                    <span class="section-number">01</span>
+                    Lịch sử hình thành
+                </h3>
+
+                <p>
+                    Ngọ Môn được xây dựng vào năm 1833 dưới triều vua
+                    Minh Mạng, trong quá trình hoàn thiện hệ thống kiến
+                    trúc kinh đô Huế. Công trình nằm ở phía nam Hoàng
+                    thành, tạo nên lối tiếp cận quan trọng vào không gian
+                    trung tâm của triều đình.
+                </p>
+
+                <p>
+                    Qua các thời kỳ lịch sử, Ngọ Môn chứng kiến nhiều
+                    thay đổi của đất nước. Ngày 30 tháng 8 năm 1945,
+                    tại đây diễn ra lễ vua Bảo Đại thoái vị, đánh dấu
+                    sự kết thúc của chế độ quân chủ ở Việt Nam.
+                </p>
+
+                <p>
+                    Việc tìm hiểu lịch sử Ngọ Môn giúp học sinh nhận
+                    diện mối liên hệ giữa một công trình kiến trúc
+                    với các biến chuyển chính trị và xã hội của dân tộc.
+                </p>
+            </section>
+
+            <!-- MỤC 2 -->
+            <section class="content-section">
+                <h3>
+                    <span class="section-number">02</span>
+                    Đặc điểm kiến trúc
+                </h3>
+
+                <p>
+                    Ngọ Môn được tổ chức thành hai phần chính:
+                    đài cổng phía dưới và Lầu Ngũ Phụng phía trên.
+                    Sự kết hợp giữa kết cấu vững chắc, hệ mái nhiều tầng
+                    và nghệ thuật trang trí tạo nên diện mạo đặc trưng
+                    của kiến trúc cung đình Huế.
+                </p>
+
+                <ul>
+                    <li>
+                        <strong>Đài cổng:</strong> được xây dựng bằng
+                        vật liệu bền chắc, bố trí năm lối đi với quy định
+                        sử dụng gắn với trật tự cung đình.
+                    </li>
+
+                    <li>
+                        <strong>Lầu Ngũ Phụng:</strong> hệ thống kiến trúc
+                        gỗ với nhiều tầng mái, tạo cảm giác cân đối và
+                        hài hòa với phần đài phía dưới.
+                    </li>
+
+                    <li>
+                        <strong>Màu sắc và trang trí:</strong> các sắc
+                        đỏ, vàng, xanh cùng những họa tiết truyền thống
+                        thể hiện quan niệm thẩm mỹ của thời Nguyễn.
+                    </li>
+
+                    <li>
+                        <strong>Không gian:</strong> vị trí và quy mô
+                        của cổng góp phần thể hiện tính tôn nghiêm,
+                        trật tự và sự phân cấp trong Hoàng thành.
+                    </li>
+                </ul>
+            </section>
+
+            <!-- MỤC 3 -->
+            <section class="content-section">
+                <h3>
+                    <span class="section-number">03</span>
+                    Giá trị lịch sử và văn hóa
+                </h3>
+
+                <p>
+                    Ngọ Môn là tư liệu trực quan để nghiên cứu lịch sử
+                    triều Nguyễn, kỹ thuật xây dựng truyền thống và
+                    tổ chức không gian cung đình. Các yếu tố kiến trúc
+                    còn lại giúp người học hình dung cách một công trình
+                    vừa thực hiện chức năng sử dụng, vừa biểu đạt quyền
+                    lực và nghi lễ.
+                </p>
+
+                <p>
+                    Ngọ Môn nằm trong Quần thể di tích Cố đô Huế,
+                    được UNESCO ghi danh là Di sản Văn hóa Thế giới
+                    năm 1993. Giá trị của di tích vì vậy không chỉ
+                    thuộc về địa phương mà còn góp phần làm phong phú
+                    di sản văn hóa của nhân loại.
+                </p>
+
+                <div class="learning-note">
+                    <strong>Gợi ý học tập:</strong>
+                    Khi quan sát Ngọ Môn, hãy chú ý mối quan hệ giữa
+                    quy mô công trình, vị trí cổng, số lượng lối đi
+                    và cách bố trí hệ mái. Từ đó, thử giải thích vì sao
+                    kiến trúc này vừa có công năng sử dụng vừa mang
+                    ý nghĩa nghi lễ.
+                </div>
+            </section>
+
+            <!-- MỤC 4 -->
+            <section class="content-section">
+                <h3>
+                    <span class="section-number">04</span>
+                    Kết nối kiến thức liên môn
+                </h3>
+
+                <ul>
+                    <li>
+                        <strong>Lịch sử:</strong> tìm hiểu triều Nguyễn,
+                        vua Minh Mạng, các nghi lễ cung đình và sự kiện
+                        thoái vị năm 1945.
+                    </li>
+
+                    <li>
+                        <strong>Địa lý:</strong> xác định vị trí Ngọ Môn
+                        trên bản đồ Đại Nội; tìm hiểu mối quan hệ giữa
+                        kinh đô, sông Hương và cảnh quan Huế.
+                    </li>
+
+                    <li>
+                        <strong>Toán học:</strong> quan sát tính đối xứng,
+                        hình dạng các tầng mái, tỉ lệ giữa đài cổng và
+                        lầu phía trên; có thể phác họa sơ đồ hình học
+                        đơn giản từ ảnh công trình.
+                    </li>
+
+                    <li>
+                        <strong>Ngữ văn:</strong> viết đoạn văn thuyết
+                        minh về một chi tiết kiến trúc, hoặc trình bày
+                        cảm nhận về giá trị lịch sử của Ngọ Môn.
+                    </li>
+
+                    <li>
+                        <strong>Tin học:</strong> sử dụng bản đồ tương tác,
+                        hình ảnh 360 độ và tư liệu số để khám phá di tích;
+                        kiểm chứng thông tin và ghi nguồn hình ảnh.
+                    </li>
+                </ul>
+            </section>
+
+            <!-- MỤC 5 -->
+            <section class="content-section">
+                <h3>
+                    <span class="section-number">05</span>
+                    Bảo tồn di sản và trách nhiệm học sinh
+                </h3>
+
+                <p>
+                    Di tích lịch sử là nguồn tư liệu quý nhưng cũng có
+                    thể bị ảnh hưởng bởi thời tiết, môi trường và hoạt
+                    động của con người. Bảo tồn di sản cần sự phối hợp
+                    giữa cơ quan chuyên môn, cộng đồng và khách tham quan.
+                </p>
+
+                <p>
+                    Học sinh có thể góp phần bằng cách tuân thủ quy định
+                    khi tham quan, không chạm hoặc làm hư hại hiện vật,
+                    không xả rác, tôn trọng không gian di tích và giới
+                    thiệu thông tin có kiểm chứng đến mọi người.
+                </p>
+            </section>
+
+            <!-- TRẮC NGHIỆM -->
+            <section class="quiz-box" id="quizBox">
+                <div class="quiz-label">KIỂM TRA KIẾN THỨC</div>
+                <h3>Góc ôn tập</h3>
+
+                <p class="quiz-question" id="quizQuestion">
+                    Câu 1. Ngọ Môn được xây dựng dưới triều vua nào?
+                </p>
+
+                <div id="quizOptions">
+                    <button class="quiz-option" data-correct="false">
+                        A. Vua Gia Long
+                    </button>
+
+                    <button class="quiz-option" data-correct="true">
+                        B. Vua Minh Mạng
+                    </button>
+
+                    <button class="quiz-option" data-correct="false">
+                        C. Vua Tự Đức
+                    </button>
+
+                    <button class="quiz-option" data-correct="false">
+                        D. Vua Khải Định
+                    </button>
+                </div>
+
+                <p
+                    class="quiz-feedback"
+                    id="quizFeedback"
+                    aria-live="polite"
+                ></p>
+
+                <button
+                    id="nextQuestion"
+                    class="quiz-next"
+                    hidden
+                >
+                    Câu tiếp theo →
+                </button>
+            </section>
+
+            <div class="learning-note">
+                <strong>Thông điệp:</strong>
+                Hiểu di sản để thêm trân trọng lịch sử, có ý thức
+                bảo tồn và chủ động ứng dụng công nghệ trong học tập.
+            </div>
+
+        </div>
+
+        <footer class="sidebar-footer">
+            KHÁM PHÁ DI SẢN CỐ ĐÔ HUẾ ✦ HỌC TẬP · TRẢI NGHIỆM · BẢO TỒN
+        </footer>
+    </aside>
+
+    <script>
+        // ===== ĐIỀU KHIỂN BẢNG THÔNG TIN =====
+
+        const toggleBtn = document.getElementById("toggleSidebar");
+        const closeBtn = document.getElementById("closeSidebar");
+        const sidebar = document.getElementById("infoSidebar");
+        const backdrop = document.getElementById("sidebarBackdrop");
+
+        function openSidebar() {
+            sidebar.inert = false;
+            sidebar.setAttribute("aria-hidden", "false");
+            backdrop.classList.add("open");
+            sidebar.classList.add("open");
+            toggleBtn.setAttribute("aria-expanded", "true");
+            document.body.style.overflow = "hidden";
+
+            closeBtn.focus();
+        }
+
+        function closeSidebar() {
+            sidebar.classList.remove("open");
+            backdrop.classList.remove("open");
+            sidebar.setAttribute("aria-hidden", "true");
+            toggleBtn.setAttribute("aria-expanded", "false");
+            document.body.style.overflow = "";
+
+            window.setTimeout(() => {
+                if (!sidebar.classList.contains("open")) {
+                    sidebar.inert = true;
+                }
+            }, 500);
+
+            toggleBtn.focus();
+        }
+
+        toggleBtn.addEventListener("click", openSidebar);
+        closeBtn.addEventListener("click", closeSidebar);
+        backdrop.addEventListener("click", closeSidebar);
+
+        document.addEventListener("keydown", (event) => {
+            if (event.key === "Escape" &&
+                sidebar.classList.contains("open")) {
+                closeSidebar();
+            }
+        });
+
+        // ===== CÂU HỎI TRẮC NGHIỆM =====
+
+        const questions = [
+            {
+                question: "Câu 1. Ngọ Môn được xây dựng dưới triều vua nào?",
+                answers: [
+                    "A. Vua Gia Long",
+                    "B. Vua Minh Mạng",
+                    "C. Vua Tự Đức",
+                    "D. Vua Khải Định"
+                ],
+                correct: 1,
+                explanation:
+                    "Chính xác! Ngọ Môn được xây dựng năm 1833 dưới triều vua Minh Mạng."
+            },
+            {
+                question: "Câu 2. Bộ phận kiến trúc nổi bật nằm phía trên đài cổng Ngọ Môn là gì?",
+                answers: [
+                    "A. Điện Thái Hòa",
+                    "B. Thế Miếu",
+                    "C. Điện Kiến Trung",
+                    "D. Lầu Ngũ Phụng"
+                ],
+                correct: 3,
+                explanation:
+                    "Đúng rồi! Lầu Ngũ Phụng là phần kiến trúc nổi bật phía trên đài cổng."
+            },
+            {
+                question: "Câu 3. Ngọ Môn nằm ở phía nào của Hoàng thành Huế?",
+                answers: [
+                    "A. Phía bắc",
+                    "B. Phía nam",
+                    "C. Phía đông",
+                    "D. Phía tây"
+                ],
+                correct: 1,
+                explanation:
+                    "Chính xác! Ngọ Môn là cổng chính ở phía nam Hoàng thành Huế."
+            },
+            {
+                question: "Câu 4. Quần thể di tích Cố đô Huế được UNESCO ghi danh năm nào?",
+                answers: [
+                    "A. 1975",
+                    "B. 1986",
+                    "C. 1993",
+                    "D. 2003"
+                ],
+                correct: 2,
+                explanation:
+                    "Đúng! Quần thể di tích Cố đô Huế được UNESCO ghi danh Di sản Văn hóa Thế giới năm 1993."
+            }
+        ];
+
+        const quizQuestion = document.getElementById("quizQuestion");
+        const quizOptions = document.getElementById("quizOptions");
+        const quizFeedback = document.getElementById("quizFeedback");
+        const nextQuestionBtn = document.getElementById("nextQuestion");
+
+        let currentQuestion = 0;
+        let answered = false;
+
+        function renderQuestion() {
+            const item = questions[currentQuestion];
+            answered = false;
+
+            quizQuestion.textContent = item.question;
+            quizFeedback.textContent = "";
+            nextQuestionBtn.hidden = true;
+            nextQuestionBtn.textContent =
+                currentQuestion === questions.length - 1
+                    ? "Làm lại từ đầu ↻"
+                    : "Câu tiếp theo →";
+
+            quizOptions.innerHTML = "";
+
+            item.answers.forEach((answer, index) => {
+                const button = document.createElement("button");
+                button.className = "quiz-option";
+                button.textContent = answer;
+                button.dataset.index = index;
+
+                button.addEventListener("click", () => {
+                    if (answered) return;
+                    answered = true;
+
+                    const isCorrect = index === item.correct;
+
+                    Array.from(quizOptions.children).forEach((option) => {
+                        option.disabled = true;
+
+                        if (Number(option.dataset.index) === item.correct) {
+                            option.classList.add("correct");
+                        }
+                    });
+
+                    if (!isCorrect) {
+                        button.classList.add("incorrect");
+                        quizFeedback.textContent =
+                            "Chưa chính xác. " + item.explanation;
+                        quizFeedback.style.color = "#852d25";
+                    } else {
+                        quizFeedback.textContent = item.explanation;
+                        quizFeedback.style.color = "#28542f";
+                    }
+
+                    nextQuestionBtn.hidden = false;
+                });
+
+                quizOptions.appendChild(button);
+            });
+        }
+
+        nextQuestionBtn.addEventListener("click", () => {
+            if (currentQuestion === questions.length - 1) {
+                currentQuestion = 0;
+            } else {
+                currentQuestion++;
+            }
+
+            renderQuestion();
+        });
+
+        renderQuestion();
+    </script>
+
+</body>
+</html>
